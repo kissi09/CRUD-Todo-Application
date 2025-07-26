@@ -15,8 +15,8 @@ export default function TodoList({ todos, onToggle, onUpdate, onDelete }) {
             <TodoForm
               editId={todo.id}
               initialText={todo.text}
-              onUpdate={(id) => {
-                onUpdate(id, todo.text);
+              onUpdate={(id, newText) => {
+                onUpdate(id, newText);
                 setEditingId(null);
               }}
             />
