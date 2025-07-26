@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '../styles/App.module.css'; // adjust the path if needed
+import styles from '../styles/App.module.css'; 
 
 export default function TodoItem({ todo, onToggle, onDelete, onEdit }) {
   return (
