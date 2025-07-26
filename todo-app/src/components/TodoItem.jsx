@@ -9,9 +9,7 @@ export default function TodoItem({ todo, onToggle, onDelete, onEdit }) {
         checked={todo.completed}
         onChange={() => onToggle(todo.id)}
       />
-      <span
-        className={todo.completed ? styles.completed : ''}
-      >
+      <span className={todo.completed ? styles.completed : ''}>
         {todo.text}
       </span>
       <button onClick={onEdit}>Edit</button>

@@ -1,7 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import styles from '../styles/App.module.css'; // ✅ Correct import
 
-export default function TodoForm({ onAdd, editId, initialText = '', onUpdate }) {
+export default function TodoForm({
+  onAdd,
+  editId,
+  initialText = '',
+  onUpdate,
+}) {
   const [text, setText] = useState(initialText);
 
   useEffect(() => {
