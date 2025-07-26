@@ -1,4 +1,4 @@
-// A no-op service worker registration fallback
+
 export function register() {
   if ('serviceWorker' in navigator) {
     window.addEventListener('load', () => {
