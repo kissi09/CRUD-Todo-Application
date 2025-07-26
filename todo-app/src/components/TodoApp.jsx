@@ -2,7 +2,7 @@ import React, { useReducer } from 'react';
 import { useLocalStorage } from '../hooks/useLocalStorage';
 import TodoList from './TodoList';
 import TodoForm from './TodoForm';
-import styles from './styles/App.module.css';
+import styles from '../styles/App.module.css';
 
 
 const ACTIONS = {
